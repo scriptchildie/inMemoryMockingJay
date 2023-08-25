@@ -22,7 +22,9 @@ int main()
 ```
 ------
 # BOF
+Template used - https://github.com/boku7/injectAmsiBypass
 ## Compiling:
+Compilation with mingw was causing reliability issues. 
 ```
 cl.exe /c /GS- mockingjayBOF.c /mockingjayBOF.o
 ```
@@ -44,6 +46,7 @@ fc4883e4f0e8c0000000415141505251564831d265488b5260488b5218488b5220488b7250480fb7
 
 
 Generate arguments for the BOF using COFFLoader's beacon_generate.py script.
+https://github.com/trustedsec/COFFLoader
 ```
 PS C:\Users\xxxxx\Desktop\COFFLoader-main> python3 .\beacon_generate.py
 Beacon Argument Generator
